@@ -1,0 +1,12 @@
+@import './styles/constants/fonts.scss';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: $app-font-common, sans-serif;
+  font-size: 16px;
+}
