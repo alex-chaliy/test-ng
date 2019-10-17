@@ -1,0 +1,31 @@
+@import '../../../../../styles/shared/ng5-slider.scss';
+@import '../../../../../styles/entities/button.scss';
+@import '../../../../../styles/constants/colors.scss';
+@import '../../../../../styles/constants/fonts.scss';
+
+
+.section {
+  margin-bottom: em(40px);
+
+  &__title {
+    color: $text-black;
+    font-size: em(18px);
+    font-family: $app-font-primary, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 em(20px);
+  }
+  
+  &-price {
+    .price {
+      font-weight: 600;
+      font-size: em(16px);
+      font-family: $app-font-primary, sans-serif;
+    }
+  
+    .ng5-slider-container {
+      margin-bottom: em(20px);
+    }
+  }
+  // @end .section-price
+}

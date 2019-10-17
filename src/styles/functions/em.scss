@@ -1,0 +1,5 @@
+@import '../constants/fonts.scss';
+
+@function em($pixels) {
+  @return #{$pixels/$app-base-font-size}em;
+}

@@ -1,0 +1,16 @@
+@import '../../../../styles/entities/page.scss';
+
+
+$content-item-padding: 15px;
+
+.content-items {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+
+  margin: -($content-item-padding);
+  .content-item {
+    width: 33.333%;
+    padding: $content-item-padding;
+  }
+}

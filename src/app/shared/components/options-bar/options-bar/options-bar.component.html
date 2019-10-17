@@ -1,0 +1,41 @@
+
+<div class="section section-price">
+  <h3 class="section__title">
+    City
+  </h3>
+  no data
+</div>
+
+<div class="section section-price">
+  <h3 class="section__title">
+    Categories
+  </h3>
+  no data
+</div>
+
+
+
+<div class="section section-price">
+  <h3 class="section__title">
+    Price
+  </h3>
+  
+  <div class="ng5-slider-container">
+    <ng5-slider 
+      [(value)]="rangeSliderFrom" 
+      [(highValue)]="rangeSliderTo" 
+      [options]="rangeSliderOptions"
+      [manualRefresh]="rangeSliderManualRefresh"
+    ></ng5-slider>
+  </div>
+  
+  <div class="price">
+    ${{rangeSliderFrom}} &nbsp; - &nbsp;
+    ${{rangeSliderTo}}
+  </div>
+  
+  <button class="button">
+    Filter
+  </button>
+
+</div>

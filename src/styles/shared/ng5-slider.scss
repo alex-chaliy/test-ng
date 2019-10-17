@@ -1,0 +1,65 @@
+@import '../constants/colors.scss';
+
+.ng5-slider-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  min-height: 20px;
+  overflow: hidden;
+
+  ::ng-deep {
+    .ng5-slider {
+      margin: 0;
+    }
+
+    .ng5-slider-bar {
+      height: 4px;
+    }
+  
+    .ng5-slider-pointer {
+      width: 17px;
+      height: 17px;
+      top: -6px;
+      background-color: $primary-color;
+      outline: none;
+      border-radius: 50%;
+    }
+  
+    .ng5-slider-pointer::after, 
+    .ng5-slider-pointer.ng5-slider-active::after {
+      background: #fff;
+      top: 2px;
+      left: 2px;
+      width: 13px;
+      height: 13px; 
+      border-radius: 50%;
+    }
+  
+    .ng5-slider-bar-wrapper {
+      height: auto;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .ng5-slider-selection {
+      background-color: $primary-color;
+    }
+  
+    .ng5-slider[disabled] {
+      .ng5-slider-pointer {
+        background-color: #c4c4c4;
+      }
+    
+      .ng5-slider-selection {
+        background-color: #c4c4c4;
+      }
+    
+      .ng5-slider-bar {
+        background-color: #c4c4c4;
+      }
+    }
+
+  }
+  // @end ::ng-deep
+}
+// @end .ng5-slider-container
