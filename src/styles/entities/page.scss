@@ -24,7 +24,7 @@ $page-container-padding-top: 30px;
 
   &__part-content {
     width: 100%;
-    margin-left: $page-part-left-width + $page-parts-interval;
+    padding-left: $page-part-left-width + $page-parts-interval;
   }
 }
 // @end .page
@@ -44,7 +44,7 @@ $page-container-padding-top: 30px;
     }
 
     &__part-content {
-      margin-left: 0;
+      padding-left: 0;
     }
   }
   // @end .page

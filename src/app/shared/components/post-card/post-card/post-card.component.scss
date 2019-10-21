@@ -1,13 +1,49 @@
 @import '../../../../../styles/functions/em.scss';
+@import '../../../../../styles/constants/fonts.scss';
+@import '../../../../../styles/constants/colors.scss';
 
 .post-card {
+  
+  &:hover {
+    
+  }
   box-shadow: 1px 1px 5px 1px rgba(0,0,0, .15);
 
   &__image {
+    display: flex;
     width: 100%;
     height: em(180px); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    
+    .title {
+      padding: 13px 22px;
+      margin-top: auto;
+      color: #fff;
+      font-size: em(13px);
+      text-shadow: 0 0 5px #000;
+      font-weight: 500;
+    }
+  }
+
+  &__title {
+    font-family: $app-font-primary, sans-serif;
+  }
+
+  &__description {
+    display: flex;
+  }
+  
+  &__category {
+    color: $text-grey;
+    font-size: em(13px);
+  }
+  
+  &__price {
+    font-family: $app-font-primary, sans-serif;
+    font-size: em(16px);
+    font-weight: 600;
+    margin-left: auto;
   }
 }
